@@ -1,4 +1,4 @@
-const carMakers = ["ford", "toyota", "chevy"];
+const carMakers: string[    ] = ["ford", "toyota", "chevy"];
 const dates = [new Date(), new Date()];
 
 const carsByMake = [["f23"], ["sdfsdf", "sdfdf"]];
@@ -17,5 +17,15 @@ carMakers.map((car: string): string => {
 })
 
 const impDates: (Date | string)[] = [new Date(), 'sfg'];
+
 impDates.push('dfsgfdsg')
 impDates.push(1000) // incompatible
+
+type User = {
+    name: string,
+    isActie: boolean
+}
+
+const allUsers: User[] = []
+allUsers.push({name:'', isActie: false})
+export {}

@@ -22,4 +22,26 @@ class ArrayOfAnything<T> {
   }
 }
 
-new ArrayOfAnything <string>(['34', 'c', 'sdf'])
+new ArrayOfAnything<string>(["34", "c", "sdf"]);
+
+// Function generics
+
+function printString(arr: string): void {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+
+function printNumber(arr: number[]): void {
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+  }
+}
+
+function printAnything<T>(arr: T[]): void {
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+  }
+}
+
+printAnything<number>([4]);

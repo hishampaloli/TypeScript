@@ -6,7 +6,7 @@ class Plane {
 
   @get("/login")
   fly(): void {
-    console.log("vrrrrrr");
+    console.log("vrrr");
   }
 }
 

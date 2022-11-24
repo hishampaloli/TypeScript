@@ -22,4 +22,4 @@ function controller(target: typeof Plane) {
   }
 }
 
-// console.log(Reflect.getMetadata("secret", Plane.prototype, "fly"));
+
